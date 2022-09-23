@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./imagenes/YouTube.png">
+  </head>
+  <body>
+    <!-- Parte de la izquierda -->
+    <aside id="izquierda">
+      <div class="muveB">
+        <i id="icons1" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="muveB">
+        <i id="iconsM" class="fa-solid fa-house"></i>
+        <p class="menuL">Inicio</p>
+      </div>
+      <div class="muveB">
+        <i id="iconsM" class="fa-solid fa-compass"></i>
+        <p class="menuL">Explorar</p>
+      </div>
+      <div class="muveB">
+        <i id="iconsM" class="fa-solid fa-bolt"></i>
+        <p class="menuL">Shorts</p>
+      </div>
+      <div class="muveB">
+        <i id="iconsM" class="fa-solid fa-play"></i>
+        <p class="menuL">Suscripciones</p>
+      </div>
+      <div class="muveB">
+        <i id="iconsM" class="fa-solid fa-chart-simple"></i>
+        <p class="menuL">Bibioteca</p>
+      </div>
+    </aside>
+    <!-- Parte de la derecha -->
+    <div id="derecha">
+      <div id="barraS">
+        <div id="iconoY"> 
+          <img id="youtubeicono" src="./imagenes/YouTube.png" alt="">
+          <a class="icono" href="https://www.youtube.com">
+            Youtube
+            </i>
+          </a>
+        </div>
+        <div id="barraB">
+          <div>
+            <input
+              id="barra"
+              type="text"
+              placeholder="Buscar"
+            />
+          </div>
+          
+          <div>
+            <button class="botonB">
+              <i id="iconoB" class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          
+        </div>
+        <div id="micro">
+         <i id="MP" class="fa-solid fa-microphone"></i>
+        </div> 
+        <div id="perfil">
+          <div id="iconoG">
+            <button class="boton">
+              <i class="fa-solid fa-video"></i>
+            </button>
+          </div>
+          <div id="iconoN">
+            <button class="boton">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+          </div>
+          <div>
+            <button class="botonp">
+              <img
+                id="imgP"
+                src="data:image/jpeg;base64,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"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="categori">
+          <div class="cat1">
+            <button>
+              <p>Todo</p>
+            </button>
+          </div>
+
+          <div class="cat">
+            <button>
+              <p>En directo</p>
+            </button>
+          </div>
+
+          <div class="cat">
+            <button>
+              <p>Videojuegos</p>
+            </button>
+          </div>
+
+          <div class="cat">
+            <button>
+              <p>Misica</p>
+            </button>
+          </div>
+
+          <div class="cat">
+            <button>
+              <p>Mixes</p>
+            </button>
+          </div>
+
+          <div class="cat">
+            <button>
+              <p>Novedades para ti</p>
+            </button>
+          </div>
+          
+          <div class="cat">
+            <button>
+              <p>Listas de reproduccion</p>
+            </button>
+          </div>
+          <div class="cat">
+            <button>
+              <p>Subidas resientes</p>
+            </button>
+          </div>
+        </div>
+        <div class="videos">
+          <div>
+            <a class="link" href="https://www.youtube.com/watch?v=zVqJv_dKUEs">
+              <img class="imgVL" 
+              src="./imagenes/1.jpg" 
+              alt="">
+              <div class="foto-texto">
+                <img
+                  id="imgV"
+                  src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/272525911_344264260898987_2618503576891135310_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=h5y97VY7ALMAX-7U-Ha&_nc_ht=scontent-mia3-2.xx&oh=00_AT9ZkNFx1g09wIGfwLo9-A4JwNwwvpnDCoI2kInNMOlOGg&oe=631EA473"
+                  alt=""
+                />
+                <div>
+                  <h4>Mix lofi space</h4>
+                  <h5>Lofi Zone</h5> 
+                  <p>1.000 visualisaciones - hace 1 mes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="link" href="https://www.youtube.com/watch?v=auoceBa5e-8">
+              <img class="imgVL" 
+              src="./imagenes/2.jpg" 
+              alt="">
+              <div class="foto-texto">
+                <img
+                  id="imgV"
+                  src="https://pm1.narvii.com/6425/8abd9606e307760157ecaa9220c55b218ef6d21f_hq.jpg"
+                  alt=""
+                />
+                <div>
+                  <h4>Star Wars Sountrack</h4>
+                  <h5>Ambient Music</h5> 
+                  <p>20.200 visualisaciones - hace 2 mes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="link" href="https://www.youtube.com/watch?v=iubSQbAeb9c">
+              <img class="imgVL" 
+              src="./imagenes/3.jpg" 
+              alt="">
+              <div class="foto-texto">
+                <img
+                  id="imgV"
+                  src="https://pbs.twimg.com/profile_images/1100750520254382080/1opxscX3_400x400.jpg"
+                  alt=""
+                />
+                <div>
+                  <h4>1 hora Phonk House</h4>
+                  <h5>one Star</h5> 
+                  <p>15.540 visualisaciones - hace 3 mes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="link" href="https://www.youtube.com/watch?v=5MYNgZCpvx4">
+              <img class="imgVL" 
+              src="./imagenes/4.jpg" 
+              alt="">
+              <div class="foto-texto">
+                <img
+                  id="imgV"
+                  src="https://pbs.twimg.com/profile_images/1100750520254382080/1opxscX3_400x400.jpg"
+                  alt=""
+                />
+                <div>
+                  <h4>Mix Gaming MODE</h4>
+                  <h5>one Star</h5> 
+                  <p>51.000 visualisaciones - hace 10 mes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="link" href="https://www.youtube.com/watch?v=FCk3vz06plI">
+              <img class="imgVL" 
+              src="./imagenes/5.jpg" 
+              alt="">
+              <div class="foto-texto">
+                <img
+                  id="imgV"
+                  src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/272525911_344264260898987_2618503576891135310_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=h5y97VY7ALMAX-7U-Ha&_nc_ht=scontent-mia3-2.xx&oh=00_AT9ZkNFx1g09wIGfwLo9-A4JwNwwvpnDCoI2kInNMOlOGg&oe=631EA473"
+                  alt=""
+                />
+                <div>
+                  <h4>Musica Chill</h4>
+                  <h5>Lofi Zone</h5> 
+                  <p>5.203 visualisaciones - hace 5 mes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="link" href="https://www.youtube.com/watch?v=gQlUknjUX0I">
+              <img class="imgVL" 
+              src="./imagenes/6.jpg" 
+              alt="">
+              <div class="foto-texto">
+                <img
+                  id="imgV"
+                  src="https://pbs.twimg.com/profile_images/1100750520254382080/1opxscX3_400x400.jpg"
+                  alt=""
+                />
+                <div>
+                  <h4>Electro House 2022</h4>
+                  <h5>one Star</h5> 
+                  <p>10.300 visualisaciones - hace 6 mes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="link" href="https://www.youtube.com/watch?v=y2Qx-VSgHTw">
+              <img class="imgVL" 
+              src="./imagenes/7.jpg" 
+              alt="">
+              <div class="foto-texto">
+                <img
+                  id="imgV"
+                  src="https://pbs.twimg.com/profile_images/1100750520254382080/1opxscX3_400x400.jpg"
+                  alt=""
+                />
+                <div>
+                  <h4>Chill House 2022</h4>
+                  <h5>one Star</h5> 
+                  <p>10.300 visualisaciones - hace 6 mes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

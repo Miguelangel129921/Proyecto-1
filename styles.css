@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#izquierda {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vmax;
+  font-size: 10px;
+  position: fixed;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#izquierda div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.muveB {
+  position: sticky;
+  bottom: 0px;
+}
+#iconsM {
+  font-size: 19px;
+}
+#icons1 {
+  font-size: 28px;
+  padding: 15px;
+}
+.menuL {
+  font-size: 11px;
+  padding: 1px;
+}
+#barraS {
+  top: 0px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#iconoY {
+  display: flex;
+  font-size: 25px;
+  align-items: flex-start;
+  padding: 1px 5px;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#youtubeicono {
+  padding: 0px;
+  width: 36px;
+  height: 38px;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+.icono {
+  padding: 5px 0px;
+  color: white;
+  text-decoration: none;
+  font-family: "League Gothic", sans-serif;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#barraB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#perfil,
+#iconoN,
+#iconoG {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  padding: 10px 15px;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#perfil,
+#iconoN,
+#iconoG :hover {
+  cursor: pointer;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#imgP {
+  width: 40px;
+  display: flex;
+  border-radius: 50px;
+  border: 0px;
+}
+#barraB {
+  display: flex;
+  padding: 5px 5px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 0px;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#barra {
+  width: 400px;
+  height: 30px;
+  color: rgb(126, 126, 126);
+  font-size: 20px;
+  background-color: rgb(18, 18, 18);
+  padding: 0px 5px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#iconoB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px 25px;
+  background-color: rgb(49, 49, 49);
+}
+.botonB {
+  border: 0px;
+  cursor: pointer;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+#micro{
+    margin: 5px 20px 5px -30px;
+    padding: 14px 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 100px;
+    background-color: rgb(24,24,24);
+}
+#MP{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    
+}
+#derecha {
+  background-color: rgb(24, 24, 24);
+  height: 100vmax;
+  margin-left: 61px;
+}
+.botonp {
+  border: 0px;
+  border-radius: 50px;
+  background-color: rgba(33, 33, 33, 0.966);
+}
+.botonp :hover {
+  cursor: pointer;
+}
+.boton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 5px 7px;
+  background-color: rgba(33, 33, 33, 0.966);
+  border: 0px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#categori {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  background-color: rgb(33, 33, 33);
+  padding: 5px 5px;
+  border-top: 1px solid gray;
+}
+.cat button {
+  display: flex;
+  border-radius: 40px;
+  background-color: rgb(71, 71, 71);
+  padding: 5px 15px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-size: 17px;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.cat1 button {
+  display: flex;
+  border-radius: 40px;
+  color: black;
+  background-color: rgb(236, 236, 236);
+  padding: 5px 15px;
+  justify-content: space-between;
+  font-size: 17px;
+  text-align: center;
+  align-items: center;
+  border: 0px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.videos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px 2px;
+}
+.imgVL {
+  width: 300px;
+  height: 185px;
+  display: flex;
+  padding: 10px 5px;
+}
+.foto-texto {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 5px 10px;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#imgV {
+  width: 30px;
+  padding: 3px;
+  display: flex;
+  border-radius: 50px;
+}
+.link {
+  text-decoration: none;
+}
